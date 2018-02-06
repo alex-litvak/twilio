@@ -7,7 +7,6 @@ token = IronWorker.payload["token"]
 from = IronWorker.payload["from"]
 to = IronWorker.payload["to"]
 body = IronWorker.payload["body"]
-# Info on Twilio API params: https://www.twilio.com/docs/api/rest/making-calls
 
 # set up a client to talk to the Twilio REST API
 @client = Twilio::REST::Client.new sid, token
